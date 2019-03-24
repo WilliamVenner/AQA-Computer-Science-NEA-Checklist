@@ -1,0 +1,586 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<meta name="description" content="Mark scheme checklist and grade calculator for the AQA A-level Computer Science non-exam assessment">
+		<meta name="keywords" content="AQA,A-level,A level,Alevel,Computer,Science,Computer Science,NEA,coursework,non-exam assessment,non exam assessment,mark,scheme,mark scheme,checklist,check list,list,grade,grades,calculator">
+		<meta name="author" content="William Venner">
+
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+		<title>AQA A-level Computer Science NEA Checklist</title>
+
+		<link rel="stylesheet" href="app.css">
+	</head>
+	<body>
+		<img src="aqa.png" id="logo"/>
+
+		<div class="spacer px5"></div>
+
+		<table id="stats">
+			<tbody>
+				<tr>
+					<th>Sources</th>
+					<td><a href="https://www.aqa.org.uk/subjects/computer-science-and-it/as-and-a-level/computer-science-7516-7517/subject-content-a-level/non-exam-assessment-the-computing-practical-project" target="_blank">Non-exam assessment - the computing practical project</a>
+					<div class="spacer px10"></div><a href="https://filestore.aqa.org.uk/over/stat_pdf/AQA-A-LEVEL-RL-GDE-BDY-JUN-2018.PDF" target="_blank">Grade Boundaries A-level reformed linear June 2018</a></td>
+				</tr>
+				<tr>
+					<th>Total Marks</th>
+					<td>75</td>
+				</tr>
+				<tr>
+					<th>Your Marks (Upper bound)</th>
+					<td id="upper-bound">0 (0%)</td>
+				</tr>
+				<tr>
+					<th>Your Marks (Median)</th>
+					<td id="median">0 (0%)</td>
+				</tr>
+				<tr>
+					<th>Your Marks (Lower bound)</th>
+					<td id="lower-bound">0 (0%)</td>
+				</tr>
+				<tr>
+					<th>June 2018 Grade (U/M/L)</th>
+					<td id="grades">U/U/U</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="spacer px5"></div>
+
+		<div id="section-root">
+			<div class="section root">
+				<div class="header">[Help]</div>
+				<div class="content" style="padding:10px;text-align:left">
+					This checklist calculates an upper-bound mark, lower-bound mark and median mark algorithmically for the AQA Computer Science NEA, and provides you with grades for each based on the 2018 mark scheme.
+
+					<div class="spacer px20"></div>
+					
+					<ul>
+						<li>For most marking criteria, you will need to <strong>manually select the band you believe you are achieving.</strong></li>
+						<li>For other marking criteria, the band will be <strong>selected for you algorithmically based on what items you have checked.</strong></li>
+						<li>For the "technical skills" marking criteria, you must <strong>manually select the band you believe you are achieving</strong>, but this will be moderated algorithmically based on what items you have checked.</li>
+						<li>Your final marks are calculated using the percentage of progress you have achieved in a band or (for marking criteria that does not have progress percentages) the mark ranges/actual marks of your selected bands.</li>
+						<li><strong>To manually select a band for a marking criteria</strong>, just click it (the leftmost column.)</li>
+					</ul>
+
+					<div class="spacer px20"></div>
+
+					<strong>Note: </strong>These algorithms are designed to be fair and realistic, but you can never know what the examiner is actually going to award you with! This must be used as a guide ONLY and does not represent your actual marks or grade.
+					<div class="spacer px5"></div>
+					<strong>Note 2: </strong>The technical skills table provided by AQA is only a list of <i>examples</i> and extra marks could be awarded for additional technical skills that may not be listed.
+				</div>
+			</div>
+
+			<div class="section root">
+				<div class="header">[Contributing]</div>
+				<div class="content" style="padding:10px;text-align:left">
+					If there's something wrong with the list or its code, <a href="https://github.com/WilliamVenner/AQA-Computer-Science-NEA-Checklist/issues" target="_blank">you can submit an issue on GitHub</a>.
+					<div class="spacer px5"></div>
+					If you'd like to make your own changes to this list or its code for <strong>anyone to use</strong>, you can <a href="https://github.com/WilliamVenner/AQA-Computer-Science-NEA-Checklist/pulls" target="_blank">submit a pull request on GitHub</a>.
+					<div class="spacer px5"></div>
+					But, if you'd like to make <strong>personal</strong> changes to this list or its code, you can <a href="https://github.com/Facepunch/AQA-Computer-Science-NEA-Checklist/fork" target="_blank">fork the repository on GitHub</a>.
+				</div>
+			</div>
+
+			<div class="section root">
+				<div class="header">Analysis (9 marks)</div>
+				<div class="content">
+					<div class="band-note">Manually select your band</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Level</th>
+								<th>Mark range</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="4" class="band-selector">3</td>
+								<td rowspan="4">7-9</td>
+								<td>Fully or nearly fully scoped analysis of a real problem, presented in a way that a third party can understand.</td>
+							</tr>
+							<tr>
+								<td>Requirements fully documented in a set of measurable and appropriate specific objectives, covering all required functionality of the solution or areas of investigation.</td>
+							</tr>
+							<tr>
+								<td>Requirements arrived at by considering, through dialogue, the needs of the intended users of the system, or recipients of the outcomes for investigative projects.</td>
+							</tr>
+							<tr>
+								<td>Problem sufficiently well modelled to be of use in subsequent stages.</td>
+							</tr>
+							
+							<tr>
+								<td rowspan="4" class="band-selector">2</td>
+								<td rowspan="4">4-6</td>
+								<td>Well scoped analysis (but with some omissions that are not serious enough to undermine later design) of a real problem.</td>
+							</tr>
+							<tr>
+								<td>Most, but not all, requirements documented in a set of, in the main, measurable and appropriate specific objectives that cover most of the required functionality of a solution or areas of investigation.</td>
+							</tr>
+							<tr>
+								<td>Requirements arrived at, in the main, by considering, through dialogue, the needs of the intended users of the system, or recipients of the outcomes for investigative projects.</td>
+							</tr>
+							<tr>
+								<td>Problem sufficiently well modelled to be of use in subsequent stages.</td>
+							</tr>
+							
+							<tr>
+								<td rowspan="4" class="band-selector">1</td>
+								<td rowspan="4">1-3</td>
+								<td>Partly scoped analysis of a problem.</td>
+							</tr>
+							<tr>
+								<td>Requirements partly documented in a set of specific objectives, not all of which are measurable or appropriate for developing a solution. The required functionality or areas of investigation are only partly addressed.</td>
+							</tr>
+							<tr>
+								<td>Some attempt to consider, through dialogue, the needs of the intended users of the system, or recipients of the outcomes for investigative projects.</td>
+							</tr>
+							<tr>
+								<td>Problem partly modelled and of some use in subsequent stages.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="section root">
+				<div class="header">Documented design (12 marks)</div>
+				<div class="content">
+					<div class="band-note">Manually select your band</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Level</th>
+								<th>Mark range</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="band-selector">4</td>
+								<td>10-12</td>
+								<td>Fully or nearly fully articulated design for a real problem, that describes how all or almost all of the key aspects of the solution/investigation are to be structured/are structured.</td>
+							</tr>
+							<tr>
+								<td class="band-selector">3</td>
+								<td>7-9</td>
+								<td>Adequately articulated design for a real problem that describes how most of the key aspects of the solution/investigation are to be structured/are structured.</td>
+							</tr>
+							<tr>
+								<td class="band-selector">2</td>
+								<td>4-6</td>
+								<td>Partially articulated design for a real problem that describes how some aspects of the solution/investigation are to be structured/are structured.</td>
+							</tr>
+							<tr>
+								<td class="band-selector">1</td>
+								<td>1-3</td>
+								<td>Inadequate articulation of the design of the solution so that it is difficult to obtain a picture of how the solution/investigation is to be structured/is structured without resorting to looking directly at the programmed solution.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="header">Technical solution (42 marks)</div>
+				<div class="content">
+					<div class="section root">
+						<div class="header">Completeness of solution (15 marks)</div>
+						<div class="content">
+							<div class="band-note">Manually select your band</div>
+							<table>
+								<thead>
+									<tr>
+										<th>Level</th>
+										<th>Mark range</th>
+										<th>Description</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="band-selector">3</td>
+										<td>11-15</td>
+										<td>A system that meets almost all of the requirements of a solution/an investigation (ignoring any requirements that go beyond the demands of A-level).</td>
+									</tr>
+									<tr>
+										<td class="band-selector">2</td>
+										<td>6-10</td>
+										<td>A system that achieves many of the requirements but not all. The marks at the top end of the band are for systems that include some of the most important requirements.</td>
+									</tr>
+									<tr>
+										<td class="band-selector">1</td>
+										<td>1-5</td>
+										<td>A system that tackles some aspects of the problem or investigation.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="section root">
+						<div class="header">Techniques used (27 marks)</div>
+						<div class="content">
+							<div class="band-note">Your band will be algorithmically selected based on your progress in "Technical skills" and "Coding styles"</div>
+							<table id="techniques-used">
+								<thead>
+									<tr>
+										<th>Level</th>
+										<th>Mark range</th>
+										<th>Description</th>
+										<th>Additional information</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr data-level="3">
+										<td class="band-achievable level-3" rowspan="3">3</td>
+										<td rowspan="3">19-27</td>
+										<td>The techniques used are appropriate and demonstrate a level of technical skill equivalent to those listed in Group A in Table 1.</td>
+										<td>Above average performance: Group A equivalent algorithms and model programmed more than well to excellent; all or almost all excellent coding style characteristics; more than to highly effective solution.</td>
+									</tr>
+									<tr>
+										<td rowspan="2">Program(s) demonstrate(s) that the skill required for this level has been applied sufficiently to demonstrate proficiency.</td>
+										<td>Average performance: Group A equivalent algorithms and/or model programmed well; majority of excellent coding style characteristics; an effective solution.</td>
+									</tr>
+									<tr>
+										<td>Below average performance: Group A equivalent algorithms and/or model programmed just adequately to fully adequate; some excellent coding style characteristics; less than effective to fairly effective solution.</td>
+									</tr>
+
+									<tr data-level="2">
+										<td class="band-achievable level-2" rowspan="3">2</td>
+										<td rowspan="3">10-18</td>
+										<td>The techniques used are appropriate and demonstrate a level of technical skill equivalent to those listed in Group B in Table 1.</td>
+										<td>Above average performance: Group B equivalent algorithms and model programmed more than well to excellent; majority of excellent coding style characteristics; more than to highly effective solution.</td>
+									</tr>
+									<tr>
+										<td rowspan="2">Program(s) demonstrate(s) that the skill required for this level has been applied sufficiently to demonstrate proficiency.</td>
+										<td>Average performance: Group B equivalent algorithms and/or model programmed well; some excellent coding style characteristics; effective solution.</td>
+									</tr>
+									<tr>
+										<td>Below average performance: Group B equivalent algorithms and/or model programmed just adequately to fully adequate; all or almost all relevant good coding style characteristics but possibly one example at most of excellent characteristics; less than effective to fairly effective solution.</td>
+									</tr>
+									
+									<tr data-level="1">
+										<td class="band-achievable level-1" rowspan="3">1</td>
+										<td rowspan="3">1-9</td>
+										<td>The techniques used demonstrate a level of technical skill equivalent to those listed in Group C in Table 1.</td>
+										<td>Above average performance: Group C equivalent model and algorithms programmed more than well to excellent; almost all relevant good coding style characteristics; more than to highly effective simple solution.</td>
+									</tr>
+									<tr>
+										<td rowspan="2">Program(s) demonstrate(s) that the skill required for this level has been applied sufficiently to demonstrate proficiency.</td>
+										<td>Average performance: Group C equivalent model and algorithms programmed well; some relevant good coding style characteristics; effective simple solution.</td>
+									</tr>
+									<tr>
+										<td>Below average performance: Group C equivalent algorithms and/or model programmed in a severely limited to limited way; basic coding style characteristics; trivial to lacking in effectiveness simple solution.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="section root">
+						<div class="header">Technical skills</div>
+						<div class="content">
+							<div class="band-note">Your band must be manually selected, but the progress of that band will be used to calculate your mark using the mark range</div>
+							<table id="technical-skills">
+								<thead>
+									<tr>
+										<th>Group</th>
+										<th>Model (including data model/structure)</th>
+										<th>Algorithms</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr data-band="a" data-level="3">
+										<td rowspan="6" class="band-selector cross-referenced progressed band-a">A (0%)</td>
+										<td><label><input type="checkbox"/> Complex data model in database (e.g. several interlinked tables)</label></td>
+										<td><label><input type="checkbox"/> Cross-table parameterised SQL</label>
+					
+										<label><input type="checkbox"/> Aggregate SQL functions</label>
+											
+										<label><input type="checkbox"/> User/CASE-generated DDL script</label></td>
+									</tr>
+									<tr data-band="a">
+										<td>Hash tables, lists, stacks, queues, graphs, trees or structures of equivalent standard
+										
+										<label><input type="checkbox" id="hash-tables-checkbox" /> Hash tables</label>
+										<label><input type="checkbox"/> Lists</label>
+										<label><input type="checkbox"/> Stacks</label>
+										<label><input type="checkbox"/> Queues</label>
+										<label><input type="checkbox"/> Graphs</label>
+										<label><input type="checkbox"/> Trees</label></td>
+
+										<td><label><input type="checkbox"/> Graph/Tree Traversal</label>
+					
+										<label><input type="checkbox"/> List operations</label>
+											
+										<label><input type="checkbox"/> Linked list maintenance</label>
+											
+										<label><input type="checkbox"/> Stack/Queue Operations</label>
+										
+										<label><input type="checkbox" id="hashing-checkbox" /> Hashing</label></td>
+									</tr>
+									<tr data-band="a">
+										<td><label><input type="checkbox"/> Files(s) organised for direct access</label></td>
+									</tr>
+									<tr data-band="a">
+										<td><label><input type="checkbox"/> Complex scientific/mathematical/robotics/control/business model</label></td>
+										<td><label><input type="checkbox"/> Advanced matrix operations</label>
+					
+										<label><input type="checkbox"/> Recursive algorithms</label>
+											
+										<label><input type="checkbox"/> Complex user-defined algorithms (e.g. optimisation, minimisation, scheduling, pattern matching) or equivalent difficulty</label>
+											
+										<label><input type="checkbox"/> Mergesort or similarly efficient sort</label></td>
+									</tr>
+									<tr data-band="a">
+										<td>Complex user-defined use of object-orientated programming (OOP) model, e.g. classes, inheritance, composition, polymorphism, interfaces
+										
+										<label><input type="checkbox"/> Classes</label>
+										<label><input type="checkbox"/> Inheritance</label>
+										<label><input type="checkbox"/> Composition</label>
+										<label><input type="checkbox"/> Polymorphism</label>
+										<label><input type="checkbox"/> Interfaces</label></td>
+
+										<td><label><input type="checkbox"/> Dynamic generation of objects based on complex user-defined use of OOP model</label></td>
+									</tr>
+									<tr data-band="a">
+										<td>Complex client-server model</td>
+										<td><label><input type="checkbox"/> Server-side scripting using request and response objects and server-side extensions for a complex client-server model</label>
+					
+										<label><input type="checkbox"/> Calling parameterised Web service APIs and parsing JSON/XML to service a complex client-server model</label></td>
+									</tr>
+					
+									<tr data-band="b" data-level="2">
+										<td rowspan="6" class="band-selector cross-referenced progressed band-b">B (0%)</td>
+										<td><label><input type="checkbox"/> Simple data model in database (e.g. two or three interlinked tables)</label></td>
+										<td><label><input type="checkbox"/> Single table or non-parameterised SQL</label></td>
+									</tr>
+									<tr data-band="b">
+										<td><label><input type="checkbox"/> Multi-dimensional arrays</label>
+					
+										<label><input type="checkbox"/> Dictionaries</label>
+										
+										<label><input type="checkbox"/> Records</label></td>
+
+										<td><label><input type="checkbox"/> Bubble sort</label>
+					
+										<label><input type="checkbox"/> Binary search</label></td>
+									</tr>
+									<tr data-band="b">
+										<td><label><input type="checkbox"/> Text files</label>
+					
+										<label><input type="checkbox"/> File(s) organised for sequential access</label></td>
+
+										<td><label><input type="checkbox"/> Writing and reading from files</label></td>
+									</tr>
+									<tr data-band="b">
+										<td><label><input type="checkbox"/> Simple scientific/mathematical/robotics/control/business model</label></td>
+										<td><label><input type="checkbox"/> Simple user defined algorithms (e.g. a range of mathematical/statistical calculations)</label></td>
+									</tr>
+									<tr data-band="b">
+										<td><label><input type="checkbox"/> Simple OOP model</label></td>
+										<td><label><input type="checkbox"/> Generation of objects based on simple OOP model</label></td>
+									</tr>
+									<tr data-band="b">
+										<td>Simple client-server model</td>
+										<td><label><input type="checkbox"/> Server-side scripting using request and response objects and server-side extensions for a simple client-server model</label>
+					
+										<label><input type="checkbox"/> Calling Web service APIs and parsing JSON/XML to service a simple client-server model</label></td>
+									</tr>
+					
+									<tr data-band="c" data-level="1">
+										<td rowspan="3" class="band-selector cross-referenced progressed band-c">C (0%)</td>
+										<td><label><input type="checkbox"/> Single-dimensional arrays</label></td>
+										<td><label><input type="checkbox"/> Linear search</label></td>
+									</tr>
+									<tr data-band="c">
+										<td><label><input type="checkbox"/> Appropriate choice of simple data types</label></td>
+										<td><label><input type="checkbox"/> Simple mathematical calculations (e.g. average)</label></td>
+									</tr>
+									<tr data-band="c">
+										<td><label><input type="checkbox"/> Single table database</label></td>
+										<td><label><input type="checkbox"/> Non-SQL table access</label></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="section root">
+						<div class="header">Coding styles</div>
+						<div class="content">
+							<div class="band-note">Your band will be algorithmically selected based on your progress</div>
+							<table id="coding-styles">
+								<thead>
+									<tr>
+										<th>Style</th>
+										<th>Characteristic</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr data-level="3">
+										<td class="band-achievable excellent">Excellent (0%)</td>
+										<td><label><input type="checkbox"/> Modules (subroutines) with appropriate interfaces.</label>
+
+										<label><input type="checkbox"/> Loosely coupled modules (subroutines) – module code interacts with other parts of the program through its interface only.</label>
+										
+										<label><input type="checkbox"/> Cohesive modules (subroutines) – module code does just one thing.</label>
+										
+										<label><input type="checkbox"/> Modules (collections of subroutines) – subroutines with common purpose grouped.</label>
+										
+										<label><input type="checkbox"/> Defensive programming.</label>
+										
+										<label><input type="checkbox"/> Good exception handling.</label></td>
+									</tr>
+									<tr data-level="2">
+										<td class="band-achievable good">Good (0%)</td>
+										<td><label><input type="checkbox"/> Well-designed user interface</label>
+
+										<label><input type="checkbox"/> Modularisation of code</label>
+										
+										<label><input type="checkbox"/> Good use of local variables</label>
+										
+										<label><input type="checkbox"/> Minimal use of global variables</label>
+										
+										<label><input type="checkbox"/> Managed casting of types</label>
+										
+										<label><input type="checkbox"/> Use of constants</label>
+										
+										<label><input type="checkbox"/> Appropriate indentation</label>
+										
+										<label><input type="checkbox"/> Self-documenting code</label>
+										
+										<label><input type="checkbox"/> Consistent style throughout</label>
+										
+										<label><input type="checkbox"/> File paths parameterised</label></td>
+									</tr>
+									<tr data-level="1">
+										<td class="band-achievable basic">Basic (0%)</td>
+										<td><label><input type="checkbox"/> Meaningful identifier names</label>
+
+										<label><input type="checkbox"/> Annotation used effectively where required</label></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section root">
+				<div class="header">Testing (8 marks)</div>
+				<div class="content">
+					<table>
+						<thead>
+							<tr>
+								<th>Level</th>
+								<th>Mark range</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="band-selector">4</td>
+								<td>7-8</td>
+								<td>Clear evidence, in the form of carefully selected representative samples, that thorough testing has been carried out. This demonstrates the robustness of the complete or nearly complete solution/thoroughness of investigation and that the requirements of the solution/investigation have been achieved.</td>
+							</tr>
+
+							<tr>
+								<td class="band-selector">3</td>
+								<td>5-6</td>
+								<td>Extensive testing has been carried out, but the evidence presented in the form of representative samples does not make clear that all of the core requirements of the solution/investigation have been achieved. This may be due to some key aspects not being tested or because the evidence is not always presented clearly.</td>
+							</tr>
+
+							<tr>
+								<td class="band-selector" rowspan="2">2</td>
+								<td rowspan="2">3-4</td>
+								<td>Evidence in the form of representative samples of moderately extensive testing, but falling short of demonstrating that the requirements of the solution/investigation have been achieved and the solution is robust/investigation thorough.</td>
+							</tr>
+							<tr>
+								<td>The evidence presented is explained.</td>
+							</tr>
+
+							<tr>
+								<td class="band-selector" rowspan="2">1</td>
+								<td rowspan="2">1-2</td>
+								<td>A small number of tests have been carried out, which demonstrate that some parts of the solution work/some outcomes of the investigation are achieved.</td>
+							</tr>
+							<tr>
+								<td>The evidence presented may not be entirely clear.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="section root">
+				<div class="header">Evaluation (4 marks)</div>
+				<div class="content">
+					<table>
+						<thead>
+							<tr>
+								<th>Level</th>
+								<th>Mark</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="band-selector" rowspan="3">4</td>
+								<td rowspan="3">4</td>
+								<td>Full consideration given to how well the outcome meets all of its requirements.</td>
+							</tr>
+							<tr>
+								<td>How the outcome could be improved if the problem was revisited is discussed and given detailed consideration.</td>
+							</tr>
+							<tr>
+								<td>Independent feedback obtained of a useful and realistic nature, evaluated and discussed in a meaningful way.</td>
+							</tr>
+
+							<tr>
+								<td class="band-selector" rowspan="3">3</td>
+								<td rowspan="3">3</td>
+								<td>Full or nearly full consideration given to how well the outcome meets all of its requirements.</td>
+							</tr>
+							<tr>
+								<td>How the outcome could be improved if the problem was revisited is discussed but consideration given is limited.</td>
+							</tr>
+							<tr>
+								<td>Independent feedback obtained of a useful and realistic nature but is not evaluated and discussed in a meaningful way, if at all.</td>
+							</tr>
+
+							<tr>
+								<td class="band-selector" rowspan="2">2</td>
+								<td rowspan="2">2</td>
+								<td>The outcome is discussed but not all aspects are fully addressed either by omission or because some of the requirements have not been met and those requirements not met have been ignored in the evaluation.</td>
+							</tr>
+							<tr>
+								<td>No independent feedback obtained or if obtained is not sufficiently useful or realistic to be evaluated in a meaningfully way even if attempted.</td>
+							</tr>
+
+							<tr>
+								<td class="band-selector" rowspan="2">1</td>
+								<td rowspan="2">1</td>
+								<td>Some of the outcomes are assessed but only in a superficial way.</td>
+							</tr>
+							<tr>
+								<td>No independent feedback obtained or if obtained is so basic as to be not worthy of evaluation.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="spacer px20"></div>
+		<span style="font-size:10px">
+			&copy; Made by William Venner for AQA Computer Science NEA 2019
+			<div class="spacer px5"></div>
+			<a href="https://github.com/WilliamVenner/AQA-Computer-Science-NEA-Checklist" target="_blank">GitHub</a>
+		</span>
+		
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
