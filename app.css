@@ -66,10 +66,10 @@ ul li:not(:last-child) {
 }
 
 #stats {
-    text-align: left;
-    margin: 0;
-    margin-bottom: 20px;
-    margin-top: 10px;
+	text-align: left;
+	margin: 0;
+	margin-bottom: 20px;
+	margin-top: 10px;
 }
 
 #stats, #section-root {
@@ -104,7 +104,7 @@ table tr {
 	vertical-align: top;
 }
 table tbody th {
-    border-bottom: 1px solid #412878;
+	border-bottom: 1px solid #412878;
 }
 
 .section {
