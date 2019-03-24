@@ -11,19 +11,19 @@ body {
 	text-align: center;
 	background-color: #fbfbfb;
 }
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
 	body {
 		margin-left: 20%;
 		margin-right: 20%;
 	}
 }
-@media (max-width: 1300px) {
+@media (max-width: 1299px) {
 	body {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
 }
-@media (max-width: 800px) {
+@media (max-width: 799px) {
 	body {
 		margin-left: 20px;
 		margin-right: 20px;
@@ -66,10 +66,10 @@ ul li:not(:last-child) {
 }
 
 #stats {
-	text-align: left;
-	margin: 0;
-	margin-bottom: 20px;
-	margin-top: 20px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 #stats, #section-root {
